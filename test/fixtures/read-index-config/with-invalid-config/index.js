@@ -1,1 +1,1 @@
-// @create-index {ignore: 'foo'}
+// @create-react-index {ignore: 'foo'}

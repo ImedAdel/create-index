@@ -1,4 +1,4 @@
-// @create-index {"ignore":["/bar.js$/"]}
+// @create-react-index {"ignore":["/bar.js$/"]}
 
 export { default as foo } from './foo.js';
 

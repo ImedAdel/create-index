@@ -1,4 +1,4 @@
-// @create-index
+// @create-react-index
 
 export createIndexCode from './createIndexCode';
 export findIndexFiles from './findIndexFiles';

@@ -1,1 +1,1 @@
-// @create-index {"ignore": ["/foo.js$/"]}
+// @create-react-index {"ignore": ["/foo.js$/"]}

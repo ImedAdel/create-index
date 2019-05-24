@@ -11,14 +11,14 @@ describe('createIndexCode()', () => {
     const indexCode = createIndexCode([]);
 
     expect(indexCode).to.equal(codeExample(`
-// @create-index
+// @create-react-index
     `));
   });
   it('describes a single child', () => {
     const indexCode = createIndexCode(['foo']);
 
     expect(indexCode).to.equal(codeExample(`
-// @create-index
+// @create-react-index
 
 export { default as foo } from './foo';
     `));
@@ -27,7 +27,7 @@ export { default as foo } from './foo';
     const indexCode = createIndexCode(['bar', 'foo']);
 
     expect(indexCode).to.equal(codeExample(`
-// @create-index
+// @create-react-index
 
 export { default as bar } from './bar';
 export { default as foo } from './foo';
@@ -38,7 +38,7 @@ export { default as foo } from './foo';
       const indexCode = createIndexCode(['foo.js']);
 
       expect(indexCode).to.equal(codeExample(`
-// @create-index
+// @create-react-index
 
 export { default as foo } from './foo.js';
       `));
@@ -49,7 +49,7 @@ export { default as foo } from './foo.js';
       const indexCode = createIndexCode(['foo', 'bar']);
 
       expect(indexCode).to.equal(codeExample(`
-// @create-index
+// @create-react-index
 
 export { default as bar } from './bar';
 export { default as foo } from './foo';
@@ -65,7 +65,7 @@ export { default as foo } from './foo';
       const indexCode = createIndexCode(['foo', 'bar'], {config});
 
       expect(indexCode).to.equal(codeExample(`
-// @create-index {"ignore":["/^zoo/"]}
+// @create-react-index {"ignore":["/^zoo/"]}
 
 export { default as bar } from './bar';
 export { default as foo } from './foo';

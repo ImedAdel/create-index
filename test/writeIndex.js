@@ -31,7 +31,7 @@ describe('writeIndex()', () => {
     const indexCode = readFile(indexFilePath);
 
     expect(indexCode).to.equal(codeExample(`
-// @create-index
+// @create-react-index
 
 export { default as bar } from './bar';
 export { default as foo } from './foo.js';
@@ -50,7 +50,7 @@ export { default as foo } from './foo.js';
     const indexCode = readFile(indexFilePath);
 
     expect(indexCode).to.equal(codeExample(`
-// @create-index {"ignore":["/bar.js$/"]}
+// @create-react-index {"ignore":["/bar.js$/"]}
 
 export { default as foo } from './foo.js';
     `));

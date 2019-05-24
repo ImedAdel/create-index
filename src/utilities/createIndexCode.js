@@ -43,7 +43,7 @@ export default (filePaths, options = {}) => {
     configCode += ' ' + JSON.stringify(options.config);
   }
 
-  code += '// @create-index' + configCode + '\n\n';
+  code += '// @create-react-index' + configCode + '\n\n';
 
   if (filePaths.length) {
     const sortedFilePaths = filePaths.sort();
