@@ -1,5 +1,5 @@
 // @create-react-index
 
-export { default as bar } from './bar';
-export { default as foo } from './foo.js';
+export { default as Bar } from './bar';
+export { default as Foo } from './foo.js';
 

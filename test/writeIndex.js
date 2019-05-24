@@ -33,8 +33,8 @@ describe('writeIndex()', () => {
     expect(indexCode).to.equal(codeExample(`
 // @create-react-index
 
-export { default as bar } from './bar';
-export { default as foo } from './foo.js';
+export { default as Bar } from './bar';
+export { default as Foo } from './foo.js';
     `));
   });
 
@@ -52,7 +52,7 @@ export { default as foo } from './foo.js';
     expect(indexCode).to.equal(codeExample(`
 // @create-react-index {"ignore":["/bar.js$/"]}
 
-export { default as foo } from './foo.js';
+export { default as Foo } from './foo.js';
     `));
   });
 });

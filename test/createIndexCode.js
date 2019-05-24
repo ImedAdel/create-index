@@ -20,7 +20,7 @@ describe('createIndexCode()', () => {
     expect(indexCode).to.equal(codeExample(`
 // @create-react-index
 
-export { default as foo } from './foo';
+export { default as Foo } from './foo';
     `));
   });
   it('describes multiple children', () => {
@@ -29,8 +29,8 @@ export { default as foo } from './foo';
     expect(indexCode).to.equal(codeExample(`
 // @create-react-index
 
-export { default as bar } from './bar';
-export { default as foo } from './foo';
+export { default as Bar } from './bar';
+export { default as Foo } from './foo';
     `));
   });
   context('file with extension', () => {
@@ -40,7 +40,7 @@ export { default as foo } from './foo';
       expect(indexCode).to.equal(codeExample(`
 // @create-react-index
 
-export { default as foo } from './foo.js';
+export { default as Foo } from './foo.js';
       `));
     });
   });
@@ -51,8 +51,8 @@ export { default as foo } from './foo.js';
       expect(indexCode).to.equal(codeExample(`
 // @create-react-index
 
-export { default as bar } from './bar';
-export { default as foo } from './foo';
+export { default as Bar } from './bar';
+export { default as Foo } from './foo';
       `));
     });
   });
@@ -67,8 +67,8 @@ export { default as foo } from './foo';
       expect(indexCode).to.equal(codeExample(`
 // @create-react-index {"ignore":["/^zoo/"]}
 
-export { default as bar } from './bar';
-export { default as foo } from './foo';
+export { default as Bar } from './bar';
+export { default as Foo } from './foo';
       `));
     });
   });
