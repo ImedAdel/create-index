@@ -1,8 +1,8 @@
 {
   "author": {
-    "email": "gajus@gajus.com",
-    "name": "Gajus Kuizinas",
-    "url": "http://gajus.com"
+    "email": "aadelimed@gmail.com",
+    "name": "Imed Adel",
+    "url": "https://imedadel.me"
   },
   "bin": "./dist/bin/create-index.js",
   "dependencies": {
@@ -12,7 +12,7 @@
     "moment": "^2.15.2",
     "yargs": "^6.3.0"
   },
-  "description": "Creates ES6 ./index.js file in target directories that imports and exports all sibling files and directories.",
+  "description": "Creates ES6 ./index.js file in target directories that imports and exports all sibling files and directories as React components.",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-transform-es2015-destructuring": "^6.18.0",
@@ -38,10 +38,10 @@
   ],
   "license": "BSD-3-Clause",
   "main": "./dist/index.js",
-  "name": "create-index",
+  "name": "create-react-index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gajus/create-index"
+    "url": "https://github.com/ImedAdel/create-index"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production babel --source-maps --copy-files ./src --out-dir ./dist",
@@ -50,5 +50,5 @@
     "precommit": "npm run test",
     "test": "npm run build && npm run lint && cross-env NODE_ENV=development mocha --compilers js:babel-register"
   },
-  "version": "1.1.0"
+  "version": "1.0.0"
 }
